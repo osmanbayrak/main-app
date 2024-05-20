@@ -1,0 +1,48 @@
+.css-pdct74-MuiTablePagination-selectLabel {
+    display: none!important;
+}
+
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+    display: none!important;
+}
+
+.css-1mxz8qt-MuiPaper-root {
+    position: relative;
+}
+
+.css-ptiqhd-MuiSvgIcon-root {
+    font-size: 1rem!important;
+}
+
+.form-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.visibility-wrapper {
+    margin-left: -5px;
+    margin-right: 3px;
+    opacity: 0.6;
+    vertical-align: sub;
+    cursor: pointer;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.table-action-wrapper {
+    gap: 10px;
+    width: 160px;
+    position: absolute;
+    right: 190px;
+    bottom: 7px;
+    display: flex;
+    z-index: 1;
+}

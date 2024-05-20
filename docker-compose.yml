@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  host:
+    build: ./shell-application
+    ports:
+      - "8080:8080"
+    depends_on:
+      - remote
+
+  remote:
+    build: ./microfrontend-1
+    ports:
+      - "8081:8081"
