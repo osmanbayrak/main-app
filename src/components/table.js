@@ -304,7 +304,7 @@ export default function EnhancedTable() {
                     variant="contained"
                     onClick={()=> applyFilterPatients(baseData, newFilters)}
                 >
-                    Filtre Uygula
+                    Uygula
                 </Button>
             </Box>
         )
