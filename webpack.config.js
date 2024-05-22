@@ -7,6 +7,14 @@ const htmlPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 module.exports = {
+  /* mode: 'production',
+  entry: './src/index.js',
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+    publicPath: 'https://microapp-trkcll-assesment.netlify.app/',
+  }, */
   mode: 'development',
   devServer: {
     open: true,
@@ -36,10 +44,9 @@ module.exports = {
       name: "Host",
       filename: "remoteEntry.js",
       remotes: {
-        MicroFrontend: "MicroFrontend@http://localhost:3000/remoteEntry.js"
+        MicroFrontend: "MicroFrontend@https://microapp-trkcll-assesment.netlify.app/remoteEntry.js"
+        // MicroFrontend: "MicroFrontend@https://localhost:3000/remoteEntry.js" (Eğer iki projeyi de localhost'da dev modunda çalıştıracaksak)
       }
     })
   ]
 };
-
-// Checkout: "Checkout@http://localhost:3000/remoteEntry.js"
